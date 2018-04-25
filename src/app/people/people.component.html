@@ -6,8 +6,61 @@
     <div class="col-md-3"></div>
     <div class="col-md-6">
       <br>
-      <h3>StarWars people</h3>
+      <h3 align="center">StarWars people</h3>
+     <div *ngFor="let p of people">
+        <h5 (click)="getPeopleByName(p.name)">{{ p.name }} </h5>
+      </div>
+
+      <div class="row">
+        
+         
+      </div>
+
+
+
+      <div *ngIf="!people">
+        <p>Algo aconteceu e não mostraremos os nomes dos personagens :( </p>
+      </div>
+ 
     </div>
-    <div class="col-md-3"></div>
+    <div class="col-md-3">
+      <div *ngIf="nomeInicial != undefined">
+        <!-- <app-people-detail></app-people-detail> -->
+      </div>  
+
+
+      <!-- <app-modal></app-modal> -->
+
+
+    </div>
+
+<!--Card-->
+<div class="card">
+
+  <!--Card image-->
+  <div class="view hm-white-slight waves-light" mdbWavesEffect>
+    <div class="left">
+      <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
+    </div>
+    <div class="col">
+      <h4 class="card-title">Card title</h4>
+
+    </div>
+
+      <a>
+          <div class="mask"></div>
+      </a>
+  </div>
+  <!--Card content-->
+  <div class="card-body">
+      <h4 class="card-title">Card title</h4>
+  </div>
+
+</div>
+<!--/.Card-->
+ 
+
+
 </div>
 </div>
+

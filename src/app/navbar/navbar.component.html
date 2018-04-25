@@ -14,17 +14,17 @@
           <li class="nav-item">
               <!-- <a class="nav-link waves-light" mdbWavesEffect>Pricing</a> -->
           </li>
-          <!-- <li class="nav-item dropdown btn-group" dropdown>
-              <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-              Basic dropdown<span class="caret"></span></a>
-              <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                  <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Action</a>
-                  <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Another action</a>
-                  <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Something else here</a>
-                  <div class="divider dropdown-divider"></div>
-                  <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Separated link</a>
-              </div>
-          </li> -->
+          <li class="nav-item dropdown btn-group" dropdown>
+            <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+            Choose options<span class="caret"></span></a>
+            <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                <a class="dropdown-item waves-light" [routerLink]="['/people']" mdbWavesEffect>People</a>
+                <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Another action</a>
+                <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Something else here</a>
+                <div class="divider dropdown-divider"></div>
+                <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Separated link</a>
+            </div>
+        </li>
       </ul>
   </links>
 </mdb-navbar>

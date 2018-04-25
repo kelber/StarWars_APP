@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
@@ -11,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PeopleComponent } from './people/people.component';
 import { PeopleDetailComponent } from './people/people-detail/people-detail.component';
 
+import { PeopleService } from './shared/people.service';
 
 @NgModule({
   declarations: [
@@ -18,15 +20,16 @@ import { PeopleDetailComponent } from './people/people-detail/people-detail.comp
     HomeComponent,
     NavbarComponent,
     PeopleComponent,
-    PeopleDetailComponent
+    PeopleDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule
+    HttpClientModule,
+    MDBBootstrapModule.forRoot()
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
+  providers: [ PeopleService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
