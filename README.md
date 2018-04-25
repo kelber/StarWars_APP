@@ -26,6 +26,10 @@ ng lint
 ```
 
 
+### Resources API
+Star Wars API from **https://swapi.co**
+
+
 #### package.json and dependencies
 ```js
 {

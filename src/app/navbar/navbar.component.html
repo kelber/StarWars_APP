@@ -1,16 +1,16 @@
 
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark special-color-dark">
   <logo>
-      <a class="navbar-brand" [routerLink]="['']">Ilegra App</a>
+      <a class="navbar-brand" [routerLink]="['/']">SW - APP</a>
   </logo>
   <links>
       <ul class="navbar-nav ">
-          <li class="nav-item active" [routerLink]="['/people']">
+          <!-- <li class="nav-item active" [routerLink]="['/people']">
               <a class="nav-link waves-light" mdbWavesEffect>People <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item"> -->
               <!-- <a class="nav-link waves-light" mdbWavesEffect></a> -->
-          </li>
+          <!-- </li> -->
           <li class="nav-item">
               <!-- <a class="nav-link waves-light" mdbWavesEffect>Pricing</a> -->
           </li>
@@ -19,10 +19,9 @@
             Choose options<span class="caret"></span></a>
             <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
                 <a class="dropdown-item waves-light" [routerLink]="['/people']" mdbWavesEffect>People</a>
-                <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Another action</a>
-                <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Something else here</a>
+                <a class="dropdown-item waves-light" [routerLink]="['/planets']" mdbWavesEffect>Planet</a>
                 <div class="divider dropdown-divider"></div>
-                <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Separated link</a>
+                <!-- <a class="dropdown-item waves-light" href="#" mdbWavesEffect>Separated link</a> -->
             </div>
         </li>
       </ul>

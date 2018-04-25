@@ -11,8 +11,11 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PeopleComponent } from './people/people.component';
 import { PeopleDetailComponent } from './people/people-detail/people-detail.component';
+import { PlanetsComponent } from './planets/planets.component';
 
+// Services
 import { PeopleService } from './shared/people.service';
+import { PlanetsService } from './shared/planets.service';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,7 @@ import { PeopleService } from './shared/people.service';
     NavbarComponent,
     PeopleComponent,
     PeopleDetailComponent,
+    PlanetsComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,7 @@ import { PeopleService } from './shared/people.service';
     MDBBootstrapModule.forRoot()
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [ PeopleService ],
+  providers: [ PeopleService, PlanetsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

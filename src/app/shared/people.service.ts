@@ -1,9 +1,11 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 
 @Injectable()
 export class PeopleService {
 
+  // pass url to environment.ts
   url = 'https://swapi.co/api/people/';
 
   constructor(private http: HttpClient) {}

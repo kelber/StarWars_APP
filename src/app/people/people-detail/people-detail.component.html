@@ -1,6 +1,12 @@
 
 <app-navbar></app-navbar>
-<br>
-<h1>Detalhe</h1>
-<h3>{{ name | json }} </h3>
-<hr>
+
+<div class="container">
+  <br>
+  <h1>Details of... {{ name }} </h1>
+  <!-- TODO - back button with new approach -->
+  <button class="btn btn-outline-primary" [routerLink]="['/people']">Back</button>
+  <br>
+  <h3 align="center">{{ name | json }} </h3>
+
+</div>
