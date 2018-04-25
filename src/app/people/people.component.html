@@ -6,13 +6,13 @@
     <div class="col-md-3"></div>
     <div class="col-md-6">
       <br>
-      <h1 align="center">Peoples from Star Wars</h1>
+      <h1 align="center">Characters from Star Wars</h1>
      <div *ngFor="let p of people">
         <h5 (click)="getPeopleByName(p.name)">{{ p.name }} </h5>
       </div>
 
       <div *ngIf="!people">
-        <p>Algo aconteceu e não mostraremos os nomes dos personagens :( </p>
+        <!-- <p>Something wrong here :( </p> -->
       </div>
  
     </div>

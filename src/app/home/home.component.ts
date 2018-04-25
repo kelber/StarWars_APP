@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('24hrs challenge using new @angular v6 aproach');
   }
 
 }
